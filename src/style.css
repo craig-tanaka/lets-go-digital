@@ -1,9 +1,22 @@
 /* #region Global Styling */
+*{
+    margin: 0;
+    padding: 0;
+}
 /* #endregion Global Styling */
 
 /* #region Header Styling */
 .navbar{
     display: flex;
-    
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.657);
+    color: white;
+    height: 4rem;
+}
+.navList{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    list-style: none;
 }
 /* #endregion Header Styling */
