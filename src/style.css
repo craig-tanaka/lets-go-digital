@@ -33,6 +33,7 @@ html {
     height: 80vh;
     background-size: cover;
     /* ba */
+    font-family: 'Noto Serif', serif;
 }
 .navbar{
     display: flex;
@@ -41,7 +42,10 @@ html {
 
     background-color: rgba(0, 0, 0, 0.657);
     color: white;
-    height: 4rem;
+    height: 5rem;
+}
+.header__siteBrand{
+    width: 15rem;
 }
 .navList{
     display: flex;
