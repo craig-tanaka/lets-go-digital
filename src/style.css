@@ -1,14 +1,44 @@
 /* #region Global Styling */
-*{
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
     margin: 0;
     padding: 0;
-}
+    height: 100%; 
+    width: 100%; 
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+  
+  *{
+    overflow: hidden;
+    margin: 0;
+    padding: 0 ;
+  }
+  
+  ul {
+      list-style: none;
+  }
+  
 /* #endregion Global Styling */
 
 /* #region Header Styling */
+.header{
+    background-image: url('./img/header-img.jpg');
+    height: 40vh;
+    background-size: cover;
+    /* ba */
+}
 .navbar{
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    
     background-color: rgba(0, 0, 0, 0.657);
     color: white;
     height: 4rem;
@@ -16,7 +46,8 @@
 .navList{
     display: flex;
     justify-content: space-around;
-    flex: 1;
+    /* flex: 1; */
+    width: 60%;
     list-style: none;
 }
 /* #endregion Header Styling */
