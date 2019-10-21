@@ -22,28 +22,36 @@ html {
   ul {
       list-style: none;
   }
+  a{
+      text-decoration: none;
+      color: inherit;
+  }
   
 /* #endregion Global Styling */
 
 /* #region Header Styling */
 .header{
     background-image: url('./img/header-img.png');
-    height: 80vh;
     background-size: cover;
     background-attachment: fixed;
-    /* background-position: center; */
 }
 .navbar{
     font-family: 'Acme', sans-serif;
     color: white;
     background-color: rgba(0, 0, 0, 0.657);
+    
+    box-shadow: 1px 0px 16px 2px #dae8ec2d;
+    --moz-box-shadow: 1px 0px 16px 2px #dae8ec2d;
+    --webkit-box-shadow: 1px 0px 16px 2px #dae8ec2d;
+
+    position: fixed;
+    width: 100%;
+}
+.navbar__mobileRow{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
     height: 5rem;
-
-    box-shadow: 1px 0px 16px 2px #083542a9;
 }
 .header__siteBrand{
     width: 15rem;
@@ -53,24 +61,28 @@ html {
     padding: .5em;
     cursor: pointer;
 }
+.navbar__toggleBtn:hover, .navbar__toggleBtn:focus{}
+.navbar__toggleBtn:active{
+    box-shadow: inset 1px 1px 2px 0px #083542;
+    transform: scale(.9);
+}
 .navbar__navList{
     display: none;
-    /* display: flex;
-    justify-content: space-around;
-    width: 60%;
-    list-style: none; */
+    text-align: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.navbar__navLink{
+    display: block;
+    padding: .5em;
 }
 .header__text{
-    height: 80%;
     padding: 0 2em;
 
     color: white;
     text-align: center;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 15vh 1em 10vh  1em;
 }
 
 /* #endregion Header Styling */

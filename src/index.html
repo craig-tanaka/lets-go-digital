@@ -7,18 +7,20 @@
   <title>Let's Go Digital</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Acme|Josefin+Sans:300&display=swap" rel="stylesheet">
+  <script defer src="index.js"></script>
 </head>
 <body>
     <header class="header">
       <nav class="navbar">
-        <h1>Lets Go Digital</h1>
-        <img src="./img/nav-drawer.png" alt="" class="navbar__toggleBtn">
+        <div class="navbar__mobileRow">
+          <h1>Lets Go Digital</h1>
+          <img src="./img/nav-drawer.png" alt="" class="navbar__toggleBtn">
+        </div>
         <ul class="navbar__navList">
-          <li>Our Packages</li>
-          <li>Our Portfolio</li>
-          <li>About Us</li>
-          <li>Contact</li>
-        </ul>
+          <a href="#Packages" class="navbar__navLink">Our Packages</a>
+          <a href="#" class="navbar__navLink">Our Portfolio</a>
+          <a href="#" class="navbar__navLink">About Us</a>
+          <a href="#" class="navbar__navLink">Contact</a>
       </nav>
       <div class="header__text">
           <img src="./img/Logo_Transparent.png" alt="Let's Go Digital" class="header__siteBrand">
@@ -27,7 +29,7 @@
       </div>
     </header>
     <main>
-      <section class="sectionPackages">
+      <section class="sectionPackages" id="Packages">
         <div class="package">
           <h3 class="package__title">Landing Page</h3>
           <p class="package__price">N$1 000</p>
