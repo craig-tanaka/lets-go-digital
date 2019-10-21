@@ -1,45 +1,87 @@
+/* #region Variable declarations */
+:root {
+    /* used to control page width padding settings */
+    --page-width-padding: 2em;
+}
+
+@media (min-width: 1140px) {
+    :root {
+        --page-width-padding: 4em;
+    }
+}
+
+@media (min-width: 1240px) {
+    :root {
+        --page-width-padding: 8em;
+    }
+}
+
+@media (min-width: 1340px) {
+    :root {
+        --page-width-padding: 12em;
+    }
+}
+
+@media (min-width: 1440px) {
+    :root {
+        --page-width-padding: 16em;
+    }
+}
+
+/* #endregion Variable declarations */
+
+
 /* #region Global Styling */
+
 html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    
+
     margin: 0;
     padding: 0;
-    width: 100%; 
-  }
-  *, *:before, *:after {
+    width: 100%;
+}
+
+*,
+*:before,
+*:after {
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
     box-sizing: inherit;
     margin: 0;
-    padding: 0 ;
-  }
-  body{
+    padding: 0;
+}
+
+body {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
-  }
-  ul {
-      list-style: none;
-  }
-  a{
-      text-decoration: none;
-      color: inherit;
-  }
-  
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* #endregion Global Styling */
 
+
 /* #region Header Styling */
-.header{
+.header {
     background-image: url('./img/header-img.png');
     background-size: cover;
     background-attachment: fixed;
 }
-.navbar{
+
+.navbar {
     font-family: 'Acme', sans-serif;
     color: white;
     background-color: rgba(0, 0, 0, 0.657);
-    
+
     box-shadow: 1px 0px 16px 2px #dae8ec2d;
     --moz-box-shadow: 1px 0px 16px 2px #dae8ec2d;
     --webkit-box-shadow: 1px 0px 16px 2px #dae8ec2d;
@@ -47,62 +89,133 @@ html {
     position: fixed;
     width: 100%;
 }
-.navbar__mobileRow{
+
+.navbar__mobileRow {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 5rem;
+    padding: 0 var(--page-width-padding);
 }
-.header__siteBrand{
+
+.header__siteBrand {
     width: 15rem;
 }
-.navbar__toggleBtn{
+
+.navbar__toggleBtn {
     width: 3em;
     padding: .5em;
     cursor: pointer;
 }
-.navbar__toggleBtn:hover, .navbar__toggleBtn:focus{}
-.navbar__toggleBtn:active{
+
+.navbar__toggleBtn:hover,
+.navbar__toggleBtn:focus {}
+
+.navbar__toggleBtn:active {
     box-shadow: inset 1px 1px 2px 0px #083542;
     transform: scale(.9);
 }
-.navbar__navList{
+
+.navbar__navList {
     display: none;
     text-align: center;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
 }
-.navbar__navLink{
+
+.navbar__navLink {
     display: block;
     padding: .5em;
 }
-.header__text{
+
+.header__text {
     padding: 0 2em;
 
     color: white;
     text-align: center;
 
-    padding: 15vh 1em 10vh  1em;
+    padding: 15vh var(--page-width-padding) 10vh var(--page-width-padding);
+}
+
+@media (min-width: 600px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 var(--page-width-padding);
+        align-items: center;
+    }
+
+    .navbar__toggleBtn {
+        display: none;
+    }
+
+    .navbar__navList {
+        display: flex !important;
+        border: none;
+    }
+
+    .navbar__mobileRow {
+        padding: 0;
+    }
 }
 
 /* #endregion Header Styling */
 
-/* #region PackagesSection Styling */
-.sectionPackages{
-    background-color: #083542;
-    color: white;
-    padding: 2rem;
 
-    /* display: flex;
-    justify-content: space-between; */
+/* #region PackagesSection Styling */
+main {
+
+    background-color: #083542;
 }
-.package{
+
+.sectionPackages {
+    color: white;
+    padding: 2em var(--page-width-padding);
+}
+
+.package {
     margin-bottom: 2em;
     padding-bottom: 1em;
     border-bottom: 1px solid white;
 }
-.package__title{
+
+.package__title {
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
+
+.package__price {
+    margin-bottom: .25em;
+    font-family: 'Acme', sans-serif;
+}
+
+.package__features {
+    list-style: circle;
+    list-style-position: inside;
+}
+
+.package__features__feature {
+    margin-bottom: .25em;
+}
+
+@media (min-width: 600px) {
+    .sectionPackages {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .package {
+        margin-right: 1em;
+        list-style: square;
+    }
+
+    .package:last-child {
+        margin-right: 0;
+    }
+
+    .package__title {
+        text-align: left;
+    }
+}
+
 /* #endregion PackagesSection Styling */
