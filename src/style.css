@@ -6,21 +6,19 @@ html {
     
     margin: 0;
     padding: 0;
-    height: 100%; 
     width: 100%; 
   }
   *, *:before, *:after {
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
     box-sizing: inherit;
-  }
-  
-  *{
-    overflow: hidden;
     margin: 0;
     padding: 0 ;
   }
-  
+  body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+  }
   ul {
       list-style: none;
   }
@@ -29,19 +27,20 @@ html {
 
 /* #region Header Styling */
 .header{
-    background-image: url('./img/header-img.jpg');
+    background-image: url('./img/header-img.png');
     height: 80vh;
     background-size: cover;
-    /* ba */
-    font-family: 'Noto Serif', serif;
+}
+.navbar{
+    font-family: 'Acme', sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.657);
 }
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-around;
 
-    background-color: rgba(0, 0, 0, 0.657);
-    color: white;
     height: 5rem;
 }
 .header__siteBrand{
@@ -63,3 +62,17 @@ html {
     color: white;
 }
 /* #endregion Header Styling */
+
+/* #region PackagesSection Styling */
+.sectionPackages{
+    background-color: #083542;
+    color: white;
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+.package{
+
+}
+/* #endregion PackagesSection Styling */
