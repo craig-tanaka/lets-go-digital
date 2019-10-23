@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,28 +10,31 @@
   <link href="https://fonts.googleapis.com/css?family=Acme|Josefin+Sans:300&display=swap" rel="stylesheet">
   <script defer src="index.js"></script>
 </head>
+
 <body>
-    <header class="header">
-      <nav class="navbar">
-        <div class="navbar__mobileRow">
-          <h1>Lets Go Digital</h1>
-          <img src="./img/nav-drawer.png" alt="" class="navbar__toggleBtn">
-        </div>
-        <div class="navbar__navList">
-          <a href="#Packages" class="navbar__navLink">Our Packages</a>
-          <a href="#Portfolio" class="navbar__navLink">Our Portfolio</a>
-          <a href="#" class="navbar__navLink">About Us</a>
-          <a href="#" class="navbar__navLink">Contact</a>
-        </div>
-      </nav>
-      <div class="header__text">
-          <img src="./img/Logo_Transparent.png" alt="Let's Go Digital" class="header__siteBrand">
-        <!-- <h2>Let's Go Digital</h2> -->
-        <p>We're a Development Team that obsessed with building next-gen on Websites and WebApps.</p>
+  <header class="header">
+    <nav class="navbar">
+      <div class="navbar__mobileRow">
+        <h1>Lets Go Digital</h1>
+        <img src="./img/nav-drawer.png" alt="" class="navbar__toggleBtn">
       </div>
-    </header>
-    <main>
-      <section class="sectionPackages" id="Packages">
+      <div class="navbar__navList">
+        <a href="#Packages" class="navbar__navLink">Our Packages</a>
+        <a href="#Portfolio" class="navbar__navLink">Our Portfolio</a>
+        <a href="#" class="navbar__navLink">About Us</a>
+        <a href="#" class="navbar__navLink">Contact</a>
+      </div>
+    </nav>
+    <div class="header__text">
+      <img src="./img/Logo_Transparent.png" alt="Let's Go Digital" class="header__siteBrand">
+      <!-- <h2>Let's Go Digital</h2> -->
+      <p>We're a Development Team that obsessed with building next-gen on Websites and WebApps.</p>
+    </div>
+  </header>
+  <main>
+    <section class="sectionPackages" id="Packages">
+      <h2 class="sectionPackages__header">Our Packages</h2>
+      <div class="sectionPackages__body">
         <div class="package">
           <h3 class="package__title">Landing Page</h3>
           <p class="package__price">N$1 000</p>
@@ -98,47 +102,62 @@
               <li>E-Commerce Site <span class="package__price">N$1500</span></li>
             </section>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="sectionPortfolio" id="Portfolio">
-          <h2 class="sectionPortfolio__header">Our Portfolio</h2>
-          <div class="sectionPortfolio__body">
-            <div class="portfolioSite">
-              <figure>
-                <img class="portfolioSite__img" src="./img/isced website.gif" alt="isced website">
-                <caption><h3 class="portfolioSite__header">ISCED Luanda</h3></caption>
-              </figure>
-              <div class="portfolioSite__text">
-                <p class="portfolioSite__description">The Luanda Higher Institute of Educational Sciences is a public higher education institution that has been serving the training of teachers, school managers and other professionals in education and scientific research since the 1980s</p>
-                <a href="http://www.iscedluanda.com" target="_blank" rel="noopener noreferrer"><button class="portfolioSite__visitBtn">Visit Site</button></a>
-              </div>
-            </div>
-            <div class="portfolioSite">
-              <figure>
-                <img class="portfolioSite__img" src="./img/tsuliza website.gif" alt="isced website">
-                <caption><h3 class="portfolioSite__header">Tsuliza Tours & Safaris</h3></caption>
-              </figure>
-              <div class="portfolioSite__text">
-                <p class="portfolioSite__description">Tsuliza Tours & Safaris cc is Tourism Company wholly-owned by Namibians. Founded in 2017 Tsuliza Tours & Safaris mainly conducts inbound tailor-made safari packages for self-drives as well as transportation services by land and by air.
-                  </p>
-                  <a href="https://tsulizasafaris.com" target="_blank" rel="noopener noreferrer"><button class="portfolioSite__visitBtn">Visit Site</button></a>
-                
-              </div>
-            </div>
-            <div class="portfolioSite">
-              <figure>
-                <img class="portfolioSite__img" src="./img/tanxy.gif" alt="isced website">
-                <caption><h3 class="portfolioSite__header">Tanxy Rogue</h3></caption>
-              </figure>
-              <div class="portfolioSite__text">
-                <p class="portfolioSite__description">Tanxy Rogue is one of our designers and his portoflio is a prime example of the landing pages we develop. Currently studying Computer Science at the University of Namibia.
-                  </p>
-                  <a href="http://tanxyrogue.me/" target="_blank" rel="noopener noreferrer"></a>
-                <button class="portfolioSite__visitBtn">Visit Site</button>
-              </div>
-            </div>
+    <section class="sectionPortfolio" id="Portfolio">
+      <h2 class="sectionPortfolio__header">Our Portfolio</h2>
+      <div class="sectionPortfolio__body">
+        <div class="portfolioSite">
+          <figure>
+            <img class="portfolioSite__img" src="./img/isced website.gif" alt="isced website">
+            <caption>
+              <h3 class="portfolioSite__header">ISCED Luanda</h3>
+            </caption>
+          </figure>
+          <div class="portfolioSite__text">
+            <p class="portfolioSite__description">The Luanda Higher Institute of Educational Sciences is a public higher
+              education institution that has been serving the training of teachers, school managers and other
+              professionals in education and scientific research since the 1980s</p>
+            <a href="http://www.iscedluanda.com" target="_blank" rel="noopener noreferrer"><button
+                class="portfolioSite__visitBtn">Visit Site</button></a>
           </div>
-      </section>
-    </main>
-  </body>
+        </div>
+        <div class="portfolioSite">
+          <figure>
+            <img class="portfolioSite__img" src="./img/tsuliza website.gif" alt="isced website">
+            <caption>
+              <h3 class="portfolioSite__header">Tsuliza Tours & Safaris</h3>
+            </caption>
+          </figure>
+          <div class="portfolioSite__text">
+            <p class="portfolioSite__description">Tsuliza Tours & Safaris cc is Tourism Company wholly-owned by
+              Namibians. Founded in 2017 Tsuliza Tours & Safaris mainly conducts inbound tailor-made safari packages for
+              self-drives as well as transportation services by land and by air.
+            </p>
+            <a href="https://tsulizasafaris.com" target="_blank" rel="noopener noreferrer"><button
+                class="portfolioSite__visitBtn">Visit Site</button></a>
+
+          </div>
+        </div>
+        <div class="portfolioSite">
+          <figure>
+            <img class="portfolioSite__img" src="./img/tanxy.gif" alt="isced website">
+            <caption>
+              <h3 class="portfolioSite__header">Tanxy Rogue</h3>
+            </caption>
+          </figure>
+          <div class="portfolioSite__text">
+            <p class="portfolioSite__description">Tanxy Rogue is one of our designers and his portoflio is a prime
+              example of the landing pages we develop. Currently studying Computer Science at the University of Namibia.
+            </p>
+            <a href="http://tanxyrogue.me/" target="_blank" rel="noopener noreferrer"></a>
+            <button class="portfolioSite__visitBtn">Visit Site</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
