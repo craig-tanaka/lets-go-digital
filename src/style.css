@@ -258,4 +258,14 @@ main{
     border-radius: 5px;
     border-width: 1px;
 }
+@media(min-width: 800px){
+    .sectionPortfolio__body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .portfolioSite{
+        width: 45%;
+    }
+}
 /* #endregion PortfolioSection Styling */
