@@ -204,11 +204,13 @@ main{
     .sectionPackages {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .package {
         margin-right: 1em;
         list-style: square;
+        width: 30%;
     }
 
     .package:last-child {
