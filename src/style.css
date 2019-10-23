@@ -134,7 +134,7 @@ a {
     color: white;
     text-align: center;
 
-    padding: 15vh var(--page-width-padding) 10vh var(--page-width-padding);
+    padding: 20vh var(--page-width-padding) 15vh var(--page-width-padding);
 }
 
 @media (min-width: 600px) {
