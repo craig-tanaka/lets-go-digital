@@ -76,7 +76,7 @@ main{
 
 /* #region Header Styling */
 .header {
-    background-image: url('./img/header-img.png');
+    background-image: url('./img/header-img.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
