@@ -9,76 +9,91 @@
         --page-width-padding: 3em;
     }
 }
+
 @media (min-width: 1000px) {
     :root {
         --page-width-padding: 5em;
     }
 }
+
 @media (min-width: 1100px) {
     :root {
         --page-width-padding: 6.5em;
     }
 }
+
 @media (min-width: 1200px) {
     :root {
         --page-width-padding: 8em;
     }
 }
+
 @media (min-width: 1300px) {
     :root {
         --page-width-padding: 12em;
     }
 }
+
 @media (min-width: 1400px) {
     :root {
         --page-width-padding: 16em;
     }
 }
+
 @media (min-width: 1500px) {
     :root {
         --page-width-padding: 18em;
     }
 }
+
 @media (min-width: 1600px) {
     :root {
         --page-width-padding: 20em;
     }
 }
+
 @media (min-width: 1700px) {
     :root {
         --page-width-padding: 22em;
     }
 }
+
 @media (min-width: 1800px) {
     :root {
         --page-width-padding: 24em;
     }
 }
+
 @media (min-width: 1800px) {
     :root {
         --page-width-padding: 26em;
     }
 }
+
 @media (min-width: 2000px) {
     :root {
         --page-width-padding: 30em;
     }
 }
+
 @media (min-width: 2100px) {
     :root {
         --page-width-padding: 32em;
     }
 }
+
 @media (min-width: 2200px) {
     :root {
         --page-width-padding: 34em;
     }
 }
+
 @media (min-width: 2300px) {
     :root {
         --page-width-padding: 36em;
     }
 }
+
 @media (min-width: 2400px) {
     :root {
         --page-width-padding: 40em;
@@ -114,25 +129,31 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
 }
+
 ul {
     list-style: none;
 }
+
 a {
     text-decoration: none;
     color: inherit;
 }
-main{
+
+main {
     background-image: url('./img/background.png');
 }
-h2{
+
+h2 {
     text-align: center;
     font-family: 'Acme', sans-serif;
     margin-bottom: .5em;
 }
-section{
+
+section {
     padding: 0 var(--page-width-padding);
 }
-.section--dark{
+
+.section--dark {
     padding: 2em var(--page-width-padding);
     background-color: #083542;
     color: white;
@@ -241,6 +262,7 @@ section{
     padding-bottom: 1em;
     border-bottom: 1px solid white;
 }
+
 .package__title {
     text-align: center;
     margin-bottom: .5em;
@@ -285,28 +307,32 @@ section{
 /* #endregion PackagesSection Styling */
 
 /* #region PortfolioSection Styling */
-.sectionPortfolio{
-}
-.portfolioSite{
+.sectionPortfolio {}
+
+.portfolioSite {
     margin-bottom: 2rem;
     padding-bottom: .75em;
     border-bottom: 1px dashed #083542;
     border-radius: 5px;
 }
-.portfolioSite__img{
+
+.portfolioSite__img {
     width: 100%;
     border: 1px solid #0835427d;
     border-radius: 3px;
     margin-bottom: .25em;
 }
-.portfolioSite__header{
+
+.portfolioSite__header {
     margin-bottom: .25em;
 }
-.portfolioSite__description{
+
+.portfolioSite__description {
     margin-bottom: .5em;
     text-align: justify;
 }
-.portfolioSite__visitBtn{
+
+.portfolioSite__visitBtn {
     padding: .5em;
     background-color: #083542;
     color: white;
@@ -314,34 +340,41 @@ section{
     border-radius: 5px;
     border-width: 1px;
 }
-@media(min-width: 800px){
-    .sectionPortfolio__body{
+
+@media(min-width: 800px) {
+    .sectionPortfolio__body {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .portfolioSite{
+
+    .portfolioSite {
         width: 45%;
     }
 }
+
 /* #endregion PortfolioSection Styling */
 
 /* #region About Us  */
-.sectionAboutUs{
+.sectionAboutUs {
     text-align: justify;
 }
-.sectionAboutUs__descrip{
+
+.sectionAboutUs__descrip {
     margin-bottom: .75rem;
 }
-.sectionAboutUs h3{
+
+.sectionAboutUs h3 {
     margin-bottom: 1.5rem;
 }
-.employee{
+
+.employee {
     margin-bottom: 1rem;
     padding-bottom: .5rem;
     border-bottom: 1px dotted white;
 }
-.employee__pic{
+
+.employee__pic {
     width: 8rem;
     border-radius: 50%;
     /* margin: 0 auto; */
@@ -349,22 +382,125 @@ section{
     left: 50%;
     margin-left: -4rem;
 }
-.employee__name,.employee__position,h3{
+
+.employee__name,
+.employee__position,
+h3 {
     text-align: center;
 }
-.employee__position{
+
+.employee__position {
     margin-bottom: .5rem;
 }
-@media (min-width: 500px){
-    .sectionAboutUs__body{
+
+@media (min-width: 500px) {
+    .sectionAboutUs__body {
         display: flex;
         justify-content: space-between;
     }
-    .employee{
+
+    .employee {
         width: 45%;
     }
 }
+
 /* .employee{
     display: flex;
 } */
 /* #endregion About Us */
+
+/* #region Contact Us */
+.sectionContact__text{
+    margin-bottom: 1rem;
+}
+
+.sectionContact__OurDetails{
+    margin-bottom: 1rem;
+}
+.sectionContact__detailRow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.sectionContact__detailIcon {
+    width: 3rem;
+}
+.sectionContact__detail{
+    font-weight: bold;
+}
+
+.sectionContact__socialLinksHeader {
+    text-align: center;
+    margin-bottom: .5rem;
+}
+.sectionContact__socialLinks {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.socialMediaIcon{
+    width: 5rem;
+}
+
+.sectionContact__messagePromptHeader{
+    margin-bottom: .5rem;
+    text-align: center;
+}
+.sectionContact__messagePromptText {
+    margin-bottom: .5rem;
+}
+
+
+
+.contactForm__label{
+    text-align: center;
+    display: block;
+    margin-bottom: .25rem;
+}
+textarea.contactForm__input{
+    border-right-color: #3c333326;
+    border-bottom-color: #3c333326;
+}
+.contactForm__input{
+    display: block;
+    width: 12rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-radius: 5px;
+    border-width: 1px;
+    font-family: 'Acme', sans-serif;
+    color: rgba(0, 0, 0, 0.651);
+}
+#contactForm__submit{
+    background-color: #083542;
+    color: white;
+}
+
+@media (min-width: 500px){
+    .sectionContact__body{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sectionContact__text, 
+    .contactForm{
+        width: 45%;
+    }
+    .contactForm__label{
+        text-align: left;
+    }
+    .contactForm__input{
+        width: 100%;
+    }
+}
+/* #endregion Contact Us */
+
+/* #region footer */
+footer{
+    background: #083542;
+    color: white;
+    text-align: center;
+    padding: .5rem;
+    font-size: .8rem;
+}
+/* #endregion footer */

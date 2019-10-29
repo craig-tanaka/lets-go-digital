@@ -19,3 +19,8 @@ document.querySelectorAll('.navbar__navLink').forEach(el => {
     })
 })
 
+
+
+function contactFormSubmit() {
+    
+}

@@ -22,13 +22,18 @@
         <a href="#Packages" class="navbar__navLink">Our Packages</a>
         <a href="#Portfolio" class="navbar__navLink">Our Portfolio</a>
         <a href="#About" class="navbar__navLink">About Us</a>
-        <a href="#" class="navbar__navLink">Contact</a>
+        <a href="#Contact" class="navbar__navLink">Contact</a>
       </div>
     </nav>
     <div class="header__text">
       <img src="./img/Logo_Transparent.png" alt="Let's Go Digital" class="header__siteBrand">
       <!-- <h2>Let's Go Digital</h2> -->
       <p>We're a Development Team that obsessed with building next-gen on Websites and WebApps.</p>
+      <div class="">
+          <a href="#"><img class="socialMediaIcon" src="./img/fb logo.png" alt="Facebook"></a>
+          <a href="#"><img class="socialMediaIcon" src="./img/twitter logo.png" alt="Facebook"></a>
+          <a href="#"><img class="socialMediaIcon" src="./img/instagram logo.png" alt="Facebook"></a>
+        </div>
     </div>
   </header>
 
@@ -90,18 +95,18 @@
           <h3 class="package__title">Maintenance</h3>
           <!-- <p class="package__price">N$3 500</p> -->
           <ul class="package__features">
-            <section>
+            <div>
               <header>Hosting Renewal</header>
               <li>Landing Page <span class="package__price">N$400 / 3 mnths</span></li>
               <li>Regular Site <span class="package__price">N$800 / 4 mnths</span></li>
               <li>E-Commerce Site <span class="package__price">N$2500 / 6 mnths</span></li>
-            </section>
-            <section>
+            </div>
+            <div>
               <header>Site ReDesign</header>
               <li>Landing Page <span class="package__price">N$500</span></li>
               <li>Regular Site <span class="package__price">N$800</span></li>
               <li>E-Commerce Site <span class="package__price">N$1500</span></li>
-            </section>
+            </div>
         </div>
       </div>
     </section>
@@ -190,8 +195,61 @@
       </div>
     </section>
 
+    <section id="Contact" class="sectionContact">
+      <h2>Contact Us</h2>
+      <div class="sectionContact__body">
+        <div class="sectionContact__text">
+         
+          <div class="sectionContact__OurDetails">
+            <div class="sectionContact__detailRow">
+              <img class="sectionContact__detailIcon" src="./img/phone.png" alt="">
+              <span class="sectionContact__detail" style="font-size: .8rem;">085-701-1541 / 081-840-5054 </span>
+            </div>
+            <div class="sectionContact__detailRow">
+              <img class="sectionContact__detailIcon" src="./img/mail.png" alt="">
+              <span class="sectionContact__detail">tanxyrogue@gmail.com</span>
+            </div>
+          </div>
+          
+          <h4 class="sectionContact__socialLinksHeader">Our Social Media</h4>
+          <div class="sectionContact__socialLinks">
+            <a href="#"><img class="socialMediaIcon" src="./img/fb logo.png" alt="Facebook"></a>
+            <a href="#"><img class="socialMediaIcon" src="./img/twitter logo.png" alt="Facebook"></a>
+            <a href="#"><img class="socialMediaIcon" src="./img/instagram logo.png" alt="Facebook"></a>
+          </div>
+
+          <h4 class="sectionContact__messagePromptHeader">Leave us a message</h4>
+          <p class="sectionContact__messagePromptText">
+            Got a query, question or want a quotation; leave us a message and we'll get in contact with you as soon as
+            possible.
+          </p>
+
+
+        </div>
+
+        <form name="contactForm" class="contactForm" onSubmit="event.preventDefault(); contactFormSubmit();">
+          <label for="name" class="contactForm__label">Your Name</label>
+          <input type="text" class="contactForm__input" name="name" id="formName">
+
+          <label for="email" class="contactForm__label">Your Email</label>
+          <input type="email" class="contactForm__input" name="email" id="formEmail">
+
+          <label for="phone" class="contactForm__label">Your Phone Number</label>
+          <input type="tel" class="contactForm__input" name="phone" id="formPhone">
+
+          <label for="mesage" class="contactForm__label">Your Message</label>
+          <textarea name="message" class="contactForm__input" id="yourMessage" rows="5"></textarea>
+
+          <input class="contactForm__input" type="submit" value="Submit" id="contactForm__submit">
+        </form>
+      </div>
+    </section>
+
   </main>
 
+  <footer>
+    Copyright Let's Go Digital 2019. All Rights Reserved
+  </footer>
 </body>
 
 </html>
