@@ -18,3 +18,4 @@ document.querySelectorAll('.navbar__navLink').forEach(el => {
         document.querySelector('.navbar__navList').style.display = 'none';
     })
 })
+
