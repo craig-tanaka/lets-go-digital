@@ -164,6 +164,9 @@ section {
 
 
 /* #region Header Styling */
+h1{
+    padding: .5rem;
+}
 .header {
     background-image: url('./img/header-img.jpg');
     background-size: cover;
