@@ -319,11 +319,22 @@ h1{
     border-radius: 5px;
 }
 
-.portfolioSite__img {
+.portfolioSite__imgContainer{
+    position: relative;
+}
+
+.portfolioSite__imgPlaceholder{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.portfolioSite__img, .portfolioSite__imgPlaceholder {
     width: 100%;
     border: 1px solid #0835427d;
     border-radius: 3px;
     margin-bottom: .25em;
+
 }
 
 .portfolioSite__header {

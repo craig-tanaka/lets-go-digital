@@ -24,3 +24,23 @@ document.querySelectorAll('.navbar__navLink').forEach(el => {
 function contactFormSubmit() {
     
 }
+
+function gifLoader() {
+    // this method loads the portfolio gifs in the background and when the gifs are finished loading replaces the placeholder images with the gifs
+    // Note: the method assumes the placeholder image and the GIf are name the same just the extension is different
+    var imgTags = document.querySelectorAll('.portfolioSite__img');
+
+    imgTags.forEach((el,) => {
+        
+        var imgSource = el.getAttribute('src');
+        imgSource = imgSource.replace(/\.[^/.]+$/, ".gif"); // removes placeholder extension and replaces it with 'gif' extension
+
+        var newImg = new Image();
+
+        newImg.addEventListener('load', () => {
+            el.src = newImg.src
+        })
+        newImg.src = imgSource;
+    })
+}
+gifLoader();
