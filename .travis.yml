@@ -3,10 +3,6 @@ node_js: node
 
 before_script:
  - npm install -g firebase-tools
- - echo "_____________________________ Beginning Pre-Deploy Build _____________________________"
- - mkdir public 
- - cp -r $TRAVIS_BUILD_DIR/src/. $TRAVIS_BUILD_DIR/public/
- - cd public && ls
  
 script:
  - echo "_____________________________ Begining Deploy  _____________________________"
