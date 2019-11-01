@@ -19,8 +19,10 @@
   <header class="header" id="Header">
     <nav class="navbar">
       <div class="navbar__mobileRow">
-        <a href="#Header"><h1>Lets Go Digital</h1></a>
-        
+        <a href="#Header">
+          <h1>Lets Go Digital</h1>
+        </a>
+
         <img src="./img/nav-drawer.png" alt="" class="navbar__toggleBtn">
       </div>
       <div class="navbar__navList">
@@ -35,10 +37,13 @@
       <!-- <h2>Let's Go Digital</h2> -->
       <p>We're a Development Team that obsessed with building next-gen on Websites and WebApps.</p>
       <div class="">
-          <a href="https://www.facebook.com/Lets-go-digital-108582793911219/" target="_blank" ><img class="socialMediaIcon" src="./img/fb logo.png" alt="Facebook"></a>
-          <a href="https://twitter.com/digital_let" target="_blank" ><img class="socialMediaIcon" src="./img/twitter logo.png" alt="Facebook"></a>
-          <a href="https://www.instagram.com/letsgodigital/" target="_blank" ><img class="socialMediaIcon" src="./img/instagram logo.png" alt="Facebook"></a>
-        </div>
+        <a href="https://www.facebook.com/Lets-go-digital-108582793911219/" target="_blank"><img class="socialMediaIcon"
+            src="./img/fb logo.png" alt="Facebook"></a>
+        <a href="https://twitter.com/digital_let" target="_blank"><img class="socialMediaIcon"
+            src="./img/twitter logo.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/letsgodigital/" target="_blank"><img class="socialMediaIcon"
+            src="./img/instagram logo.png" alt="Facebook"></a>
+      </div>
     </div>
   </header>
 
@@ -121,7 +126,7 @@
       <div class="sectionPortfolio__body">
         <div class="portfolioSite">
           <figure>
-              <img class="portfolioSite__img" src="./img/isced website.jpg" alt="isced website">
+            <img class="portfolioSite__img" src="./img/isced website.jpg" alt="isced website">
             <caption>
               <h3 class="portfolioSite__header">ISCED Luanda</h3>
             </caption>
@@ -184,7 +189,8 @@
           <div class="employeeInfo__text">
             <h4 class="employee__name">Ms. Namutenya C. Ingo</h4>
             <h5 class="employee__position">CEO and Founder</h5>
-            <p class="employee__descrip">A Bachelor of Business Science graduate, MS Ingo started this company because of her passion in business and web technologies .</p>
+            <p class="employee__descrip">A Bachelor of Business Science graduate, MS Ingo started this company because
+              of her passion in business and web technologies .</p>
           </div>
         </div>
         <div class="employee">
@@ -192,7 +198,8 @@
           <div class="employeeInfo__text">
             <h4 class="employee__name">Mr Lislie T. Mbudaya</h4>
             <h5 class="employee__position">Senior Marketing Exec</h5>
-            <p class="employee__descrip">A Unam Information Science graduate, Lislie enjoys craeting technological systems and connecting them to already existing info network.</p>
+            <p class="employee__descrip">A Unam Information Science graduate, Lislie enjoys craeting technological
+              systems and connecting them to already existing info network.</p>
           </div>
         </div>
         <div class="employee">
@@ -211,7 +218,7 @@
       <h2>Contact Us</h2>
       <div class="sectionContact__body">
         <div class="sectionContact__text">
-         
+
           <div class="sectionContact__OurDetails">
             <div class="sectionContact__detailRow">
               <img class="sectionContact__detailIcon" src="./img/phone.png" alt="">
@@ -222,12 +229,15 @@
               <span class="sectionContact__detail">tanxyrogue@gmail.com</span>
             </div>
           </div>
-          
+
           <h4 class="sectionContact__socialLinksHeader">Our Social Media</h4>
           <div class="sectionContact__socialLinks">
-            <a href="https://www.facebook.com/Lets-go-digital-108582793911219/" target="_blank" ><img class="socialMediaIcon" src="./img/fb logo.png" alt="Facebook"></a>
-            <a href="https://twitter.com/digital_let" target="_blank" ><img class="socialMediaIcon" src="./img/twitter logo.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/letsgodigital/" target="_blank" ><img class="socialMediaIcon" src="./img/instagram logo.png" alt="Facebook"></a>
+            <a href="https://www.facebook.com/Lets-go-digital-108582793911219/" target="_blank"><img
+                class="socialMediaIcon" src="./img/fb logo.png" alt="Facebook"></a>
+            <a href="https://twitter.com/digital_let" target="_blank"><img class="socialMediaIcon"
+                src="./img/twitter logo.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/letsgodigital/" target="_blank"><img class="socialMediaIcon"
+                src="./img/instagram logo.png" alt="Facebook"></a>
           </div>
 
           <h4 class="sectionContact__messagePromptHeader">Leave us a message</h4>
@@ -254,6 +264,60 @@
 
           <input class="contactForm__input" type="submit" value="Submit" id="contactForm__submit">
         </form>
+
+        <div class="loaderContainer">
+          <div class="loader">
+            <style>
+              .loaderContainer{
+                position: relative;
+                width: 100%;
+                display: none;
+              }
+              .loader {
+                overflow: hidden;
+                display: inline-block;
+                width: 64px;
+                height: 64px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -32px;
+                margin-top: -32px;
+              }
+  
+              .loader:after {
+                content: " ";
+                display: block;
+                border-radius: 50%;
+                width: 0;
+                height: 0;
+                margin: 6px;
+                box-sizing: border-box;
+                border: 26px solid #fff;
+                border-color: rgb(134, 127, 127) transparent rgb(109, 106, 106) transparent;
+                animation: loader 1.2s infinite;
+              }
+  
+              @keyframes loader {
+                0% {
+                  transform: rotate(0);
+                  animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+                }
+  
+                50% {
+                  transform: rotate(900deg);
+                  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                }
+  
+                100% {
+                  transform: rotate(1800deg);
+                }
+              }
+            </style>
+          </div>
+        </div>
+
+
       </div>
     </section>
 

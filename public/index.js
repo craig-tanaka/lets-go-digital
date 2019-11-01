@@ -22,6 +22,22 @@ document.querySelectorAll('.navbar__navLink').forEach(el => {
 
 
 function contactFormSubmit() {
+    document.querySelector('.loaderContainer').style.display = 'inline-block'
+    document.querySelector('.contactForm').style.display = 'none'
+    firebase.firestore().collection("messages").add({
+        CustomerName: document.contactForm.name.value,
+        CustomerEmail: document.contactForm.email.value,
+        CustomerPhone: document.contactForm.phone.value,
+        Message: document.contactForm.message.value
+    })
+    .then(()=>{
+        alert("Your Message has been sent.\nPlease check your Email for a reply soon.");
+        document.querySelector('.loaderContainer').style.display = 'none'
+        document.querySelector('.contactForm').style.display = 'initial';
+        document.contactForm.reset();
+    })
+
+    console.log()
 }
 
 function gifLoader() {
