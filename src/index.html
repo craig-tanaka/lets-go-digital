@@ -176,12 +176,11 @@
       <h3 class="">Our Team</h3>
       <div class="sectionAboutUs__body">
         <div class="employee">
-          <img src="./img/craig.jpg" alt="" class="employee__pic">
+          <img src="./img/namutenya.jpg" alt="" class="employee__pic">
           <div class="employeeInfo__text">
-            <h4 class="employee__name">Mr Craig T. Mudzingwa</h4>
-            <h5 class="employee__position">Senior Web developer</h5>
-            <p class="employee__descrip">A Unam Computer Science graduate, Craig enjoys creating new, sleek and
-              functional designs.</p>
+            <h4 class="employee__name">Ms. Namutenya C. Ingo</h4>
+            <h5 class="employee__position">CEO and Founder</h5>
+            <p class="employee__descrip">A Bachelor of Business Science graduate, MS Ingo started this company because of her passion in business and web technologies .</p>
           </div>
         </div>
         <div class="employee">
@@ -189,8 +188,16 @@
           <div class="employeeInfo__text">
             <h4 class="employee__name">Mr Lislie T. Mbudaya</h4>
             <h5 class="employee__position">Senior Marketing Exec</h5>
-            <p class="employee__descrip">A Unam Information Science graduate, Lislie enjoys craeting technological
-              systems and connecting them to already existing info network.</p>
+            <p class="employee__descrip">A Unam Information Science graduate, Lislie enjoys craeting technological systems and connecting them to already existing info network.</p>
+          </div>
+        </div>
+        <div class="employee">
+          <img src="./img/craig.jpg" alt="" class="employee__pic">
+          <div class="employeeInfo__text">
+            <h4 class="employee__name">Mr Craig T. Mudzingwa</h4>
+            <h5 class="employee__position">Senior Web developer</h5>
+            <p class="employee__descrip">A Unam Computer Science graduate, Craig enjoys creating new, sleek and
+              functional designs.</p>
           </div>
         </div>
       </div>
@@ -230,16 +237,16 @@
 
         <form name="contactForm" class="contactForm" onSubmit="event.preventDefault(); contactFormSubmit();">
           <label for="name" class="contactForm__label">Your Name</label>
-          <input type="text" class="contactForm__input" name="name" id="formName">
+          <input type="text" class="contactForm__input" name="name" id="formName" required>
 
           <label for="email" class="contactForm__label">Your Email</label>
-          <input type="email" class="contactForm__input" name="email" id="formEmail">
+          <input type="email" class="contactForm__input" name="email" id="formEmail" required>
 
           <label for="phone" class="contactForm__label">Your Phone Number</label>
-          <input type="tel" class="contactForm__input" name="phone" id="formPhone">
+          <input type="tel" class="contactForm__input" name="phone" id="formPhone" required>
 
           <label for="mesage" class="contactForm__label">Your Message</label>
-          <textarea name="message" class="contactForm__input" id="yourMessage" rows="5"></textarea>
+          <textarea name="message" class="contactForm__input" id="yourMessage" rows="5" required></textarea>
 
           <input class="contactForm__input" type="submit" value="Submit" id="contactForm__submit">
         </form>

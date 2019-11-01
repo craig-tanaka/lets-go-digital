@@ -411,6 +411,7 @@ h3 {
     .sectionAboutUs__body {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .employee {
