@@ -20,7 +20,7 @@ var mailOptions = {
 
 exports.sendUserMessage = functions
     .firestore
-    .document('messsages/{messsagesID}')
+    .document('messages/{messsagesID}')
     .onCreate((snapshot, context)=>{
         // mailOptions.text = "A new Booking has been made by <br>" + snapshot.data().name + " for the <br/>" + snapshot.data().service + " service, on " + snapshot.data().date + " during the " + snapshot.data().timeslot + ". /nHis/Her phone number is " + snapshot.data().phone;
         mailOptions.html = `A new Message has been left by a user named: <strong>${snapshot.data().UserName}</strong><br/>
