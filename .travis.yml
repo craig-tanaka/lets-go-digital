@@ -3,6 +3,7 @@ node_js: node
 
 before_script:
  - npm install -g firebase-tools
+ - npm install eslint
  
 script:
  - echo "_____________________________ Begining Deploy  _____________________________"
