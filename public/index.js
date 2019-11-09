@@ -25,9 +25,9 @@ function contactFormSubmit() {
     document.querySelector('.loaderContainer').style.display = 'inline-block'
     document.querySelector('.contactForm').style.display = 'none'
     firebase.firestore().collection("messages").add({
-        CustomerName: document.contactForm.name.value,
-        CustomerEmail: document.contactForm.email.value,
-        CustomerPhone: document.contactForm.phone.value,
+        UserName: document.contactForm.name.value,
+        UserEmail: document.contactForm.email.value,
+        UserPhone: document.contactForm.phone.value,
         Message: document.contactForm.message.value
     })
     .then(()=>{
