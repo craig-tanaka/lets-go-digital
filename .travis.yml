@@ -6,5 +6,5 @@ before_script:
  
 script:
  - echo "_____________________________ Begining Deploy  _____________________________"
- - firebase deploy --token $FIREBASE_TOKEN --non-interactive
+ - firebase deploy --only hosting --token $FIREBASE_TOKEN --non-interactive
  - echo "_____________________________ Deploy Finish _____________________________"
