@@ -26,7 +26,10 @@ exports.sendUserMessage = functions
         mailOptions.html = `A new Message has been left by a user named: <strong>${snapshot.data().UserName}</strong><br/>
                             Their Phone number is: <strong>${snapshot.data().UserPhone}</strong>, Their email is: <strong>${snapshot.data().UserEmail}.</strong><br/>
                             <br/>
-                            Their message is: <em><b>${snapshot.data().Message}</b></em>`;
+                            <u>Their message is as follows: </u> <br>
+                            ______________________________________________________<br>
+                            <em><b>${snapshot.data().Message}</b></em><br>
+                            _______________<em><small>end__of__message</small></em>____________________`;
 
         return transporter.sendMail(mailOptions)
         .then(()=>{
