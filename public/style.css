@@ -369,63 +369,11 @@ h1{
 
 /* #endregion PortfolioSection Styling */
 
-/* #region About Us  */
-.sectionAboutUs {
-    text-align: justify;
-}
-
-.sectionAboutUs__descrip {
-    margin-bottom: .75rem;
-}
-
-.sectionAboutUs h3 {
-    margin-bottom: 1.5rem;
-}
-
-.employee {
-    margin-bottom: 1rem;
-    padding-bottom: .5rem;
-    border-bottom: 1px dotted white;
-}
-
-.employee__pic {
-    width: 8rem;
-    border-radius: 50%;
-    /* margin: 0 auto; */
-    position: relative;
-    left: 50%;
-    margin-left: -4rem;
-}
-
-.employee__name,
-.employee__position,
-h3 {
-    text-align: center;
-}
-
-.employee__position {
-    margin-bottom: .5rem;
-}
-
-@media (min-width: 500px) {
-    .sectionAboutUs__body {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .employee {
-        width: 45%;
-    }
-}
-
-/* .employee{
-    display: flex;
-} */
-/* #endregion About Us */
 
 /* #region Contact Us */
-
+.sectionContact{
+    margin-bottom: 0;
+}
 .sectionContact__text{
     margin-bottom: 1rem;
 }
@@ -513,10 +461,11 @@ textarea.contactForm__input{
 
 /* #region footer */
 footer{
-    background: #083542;
-    color: white;
+    /* background: #083542; */
+    /* color: white; */
+    background: url('./img/background.png');
     text-align: center;
-    padding: .5rem;
+    padding: 1rem;
     font-size: .8rem;
 }
 /* #endregion footer */
